@@ -12,6 +12,13 @@ npm run dev      # http://localhost:5173
 npm run build    # production build in dist/
 ```
 
+## Deploying
+
+- **Vercel:** import the repo at vercel.com/new. `vercel.json` sets the build (`npm run build`, output `dist`), so the defaults work. Every push to `main` redeploys.
+- **GitHub Pages:** `.github/workflows/deploy.yml` publishes `dist/` to the `gh-pages` branch on every push to `main`.
+
+Assets use relative paths (`base: './'`), so the same build works at a domain root (Vercel) and under `/journalDaily/` (Pages).
+
 ## How it's organised
 
 ```
