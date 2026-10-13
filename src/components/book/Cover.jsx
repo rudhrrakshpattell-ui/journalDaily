@@ -37,7 +37,7 @@ export function CoverFace({ owner, year }) {
           Daily
         </div>
         <Fleuron className="mt-4 w-2/3 rotate-180 text-[#c9a24a] opacity-90" />
-        <div className="gold-foil mt-6 font-serif-sc text-sm tracking-[0.35em] sm:text-base">Anno {year}</div>
+        <div className="gold-foil mt-6 font-serif-sc text-sm tracking-[0.35em] sm:text-base">{year}</div>
         {owner && <div className="gold-foil mt-2 font-serif text-base italic sm:text-lg">{owner}</div>}
       </div>
     </div>
